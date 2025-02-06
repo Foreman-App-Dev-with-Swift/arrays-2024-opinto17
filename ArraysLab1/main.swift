@@ -135,9 +135,9 @@ print("***PROBLEM 1.3 : ARRAY INSERTION")
  //Hint: see line 78
 //print the registration list and observe the output making sure it is correct.
 
-
-
- print("\n")
+registrationList.insert("charlie", at: 1)
+print(registrationList)
+print("\n")
  
 print("***Example for 1.4")
 //You can identify a particular portion of an array by adding the element number with name of the array. This is called subscripting.
@@ -152,6 +152,9 @@ print("***PROBLEM 1.4 : ARRAY MODIFICATION")
 // registrationList[1] = "Charlie1"
 // print(registrationList)
 
+registrationList[5] = "Rebecca"
+print(registrationList)
+
 
  print("\n")
  
@@ -160,6 +163,8 @@ print("***PROBLEM 1.5 : ARRAY REMOVAL")
 // Call removeLast() on registrationList. Store the result of removeLast() into a new constant deletedItem. If done correctly, this should remove Rebecca from the collection. print the registrationList, then print deletedItem.
 //Observe the output in the console and make sure it is correct.
 
+registrationList.removeLast()
+print(registrationList)
  
 print("\n")
 
