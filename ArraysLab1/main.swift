@@ -176,6 +176,18 @@ print("***PROBLEM 2.0 : FITNESS TRACKING")
  */
 //Print all three of the arrays to make sure it outputs in the console.
 
+var array : [String] = []
+array.append("walking challenges")
+print(array)
+print("walk 3 miles a day")
+var array1 : [String] = []
+array1.append("running challenges")
+print(array1)
+print("Run 5 times a week")
+var array2 : [String] = []
+array2.append("weightlifting challenges")
+print(array2)
+print("Lift 3 times a day")
 
 
 
@@ -184,10 +196,13 @@ print("\n")
 print("PROBLEM 2.1 : FITNESS TRACKING")
 // In your app you want to show all of these lists on the same screen grouped into sections. Create a challenges array that holds (assigned the value) each of the lists you have created (it will be an array of arrays). Using the new challenges array, print the first element. Remember what number the first element it. Hint: it's alway minus 1.
 
+var challenges = ["walking challenges", "running challenges" , "weightlifting challenges"]
+
+print(challenges)
 
 
 print("\n")
-print("***PROBLEM 2.2 : PRINTING FITNESS TRACKING")
+print("***PROBLEM 2.2   : PRINTING FITNESS TRACKING")
 //Print the first element in second challenge list. First, access index 1 of challenges because that is our second element, then index that second element's first element (because it is a list). This means that calling challenges[1] will return a list of runningChallenges, and because that returned value is a list we can call the index, index 1, for getting the second element of it.
 // Lists can contain other lists. For example you can have a todo list where the first level is the day of the week and then in each day there is another list of all the things you need to do that day.
 //Create the 2D array to hold the other arrays
