@@ -175,30 +175,20 @@ print("***PROBLEM 2.0 : FITNESS TRACKING")
  Using arrays of type String, create at least THREE lists (arrays), one for walking challenges, and one for running challenges, and one for lifting challenges - in that order. Each should have at least THREE challenges or how many times a week it's done and should be initialized using an array. Feel free to create more lists for different activities.
  */
 //Print all three of the arrays to make sure it outputs in the console.
-
-var array : [String] = []
-array.append("walking challenges")
-print(array)
-print("walk 3 miles a day")
-var array1 : [String] = []
-array1.append("running challenges")
-print(array1)
-print("Run 5 times a week")
-var array2 : [String] = []
-array2.append("weightlifting challenges")
-print(array2)
-print("Lift 3 times a day")
+var walkingChallenges : [String] = [ "Walk twice n a week", "Walk four times in a week",  "Walk everyday in a week"]
+var runningChallenges : [String] = ["Run 3 times a week" , "Run four times in a week" , "run everyday in a week"]
+var weightliftingChallenges: [String] = ["Weightlift 5 times a week" , "Weightlift 3 times in a week" , "Weightlift everyday in a week"]
 
 
-
+print(walkingChallenges)
+print(runningChallenges)
+print(weightliftingChallenges)
 print("\n")
 
 print("PROBLEM 2.1 : FITNESS TRACKING")
 // In your app you want to show all of these lists on the same screen grouped into sections. Create a challenges array that holds (assigned the value) each of the lists you have created (it will be an array of arrays). Using the new challenges array, print the first element. Remember what number the first element it. Hint: it's alway minus 1.
 
-var challenges = ["walking challenges", "running challenges" , "weightlifting challenges"]
-
-print(challenges)
+var challenges = [walkingChallenges , runningChallenges , weightliftingChallenges]
 
 
 print("\n")
@@ -209,6 +199,8 @@ print("***PROBLEM 2.2   : PRINTING FITNESS TRACKING")
 //Confused? You are using a double index [] [] which is calling a list in a list.
 //Print it. The console should say what you coded the second challenge in the second list. If not, figure it out.
 
+print(challenges[1][1])
+
  
  
  
@@ -216,8 +208,8 @@ print("***PROBLEM 2.2   : PRINTING FITNESS TRACKING")
  print("\n")
 print("***PROBLEM 2.3 : REMOVING CHALLENGES")
 // All of the challenges will reset at the end of the month. Use the removeAll to remove everything from challenges. Print challenges.
-
- 
+challenges.removeAll()
+ print(challenges)
  
  
  print("\n")
@@ -226,16 +218,25 @@ print("***PROBLEM 2.3 : REMOVING CHALLENGES")
  print("PROBLEM 2.4 : FITNESS COMMITMENTS")
 // Create a new array of type String that will represent challenges a user has committed to instead of available challenges. It can be an empty array or have a few items in it. Print it to see if it outputs in the console.
  
-
+var committedChallenges: [String] = []
  
  print("\n")
 
-print("PROBLEM 2.5 : COMBINING IF STATEMENTS AND ARRAYS")
+print("PROBLEM 2.5 : CO  MBINING IF STATEMENTS AND ARRAYS")
 // Write an if statement that will use .isEmpty to check if there is anything in the array. If there is not, print a statement asking the user to commit to a challenge. Add an else-if statement that will print "The challenge you have chosen is" and add the FIRST committedChallenges[0] if the array count is exactly equals 1 (.count). Then add an else statement that will print "You have chosen multiple challenges."
 //Hint: To be clear, you are using committedChallenges.isEmpty first and then committedChallenges.count next.
 //Then test your code by changing the number of challenges in the committedChallenges array above.
 
- 
+
+if committedChallenges.isEmpty{
+    print("commit to a challenge")
+} else if committedChallenges.count == 1 {
+    print("The challenge you have chosen is")
+} else {
+    
+    print("you have chosen multiple challenges")
+}
+
 
 
 
